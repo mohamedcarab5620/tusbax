@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  
+   body{
+  background-color: #f0f0f0;
+}
+
+div{
+  margin-top: 200px;
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  margin-left: 500px;  
+  transition-property: all;
+  transition-duration: 2s;
+  border: 2px solid black;
+}
+
+div:hover{
+  box-shadow: 3px 3px 3px rgb(3, 49, 119);
+  transform: scale(1.1);
+}
+
+.ten, .twenty, .thirty, .fourty, .hundred{
+  text-align: center;
+}
+
+.eber{
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.plus{
+  margin-left: 80px;
+  padding: 10px 20px ;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: green;
+  box-shadow: 3px 3px 3px rgb(144, 141, 141);
+}
+
+.minus{
+  margin-left: 30px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: gray;
+  font-size: 20px;
+  color: blue;
+  box-shadow: 3px 3px 5px rgb(149, 143, 143);
+}
+
+.reset{
+  margin-left: 125px;
+  margin-top: 20px;
+  padding: 10px 20px ;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: red;
+  box-shadow: 4px 4px 4px pink;
+}
+
+@media (max-width: 1024px){
+
+  div{
+    margin-left: auto;  
+    margin-right: auto;
+    width: 350px;
+    height: 330px;
+  }
+
+  .eber{
+    font-size: 60px;
+  }
+
+  .plus,
+  .minus{
+    font-size: 22px;
+    padding: 12px 20px;
+  }
+
+  .plus{
+    margin-left: 100px;
+  }
+
+  .reset{
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 600px){
+
+  div{
+    width: 260px;
+    height: 290px;
+    margin-top: 240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .eber{
+    font-size: 45px;
+  }
+
+  .plus{
+    margin-left: 60px;
+  }
+
+  .reset{
+    margin-left: 105px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div>
+      <p class="ten">👏</p>
+    <p class="twenty">👍</p>
+    <p class="thirty">🫰</p>
+    <p class="fourty">🤲</p>
+    <p class="hundred">👑</p>
+    <h1 class="eber">0</h1>
+    <button class="plus">+</button>
+    <button class="minus">-</button> <br>
+    <button class="reset">x</button>
+    <script src="assignment.js"></script>
+  </div>
+</body>
+</html>
